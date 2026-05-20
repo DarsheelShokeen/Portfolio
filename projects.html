@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Darsheel Shokeen</title>
+    <meta name="description" content="Projects by Darsheel Shokeen — A collection of work and personal projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Animated gradient line at top -->
+    <div class="top-gradient-line"></div>
+
+    <!-- Back button -->
+    <a href="index.html" class="nav-back-btn" id="nav-back" aria-label="Back to home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5"></path>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="nav nav-pill" id="main-nav">
+        <a href="index.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Home
+        </a>
+        <a href="projects.html" class="nav-link active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+            Projects
+        </a>
+        <a href="contact.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Contact
+        </a>
+    </nav>
+
+    <!-- Theme toggle -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+        </svg>
+    </button>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="page-header">
+            <h1 class="page-title">Projects</h1>
+            <p class="page-description">Some of the projects are from work and some are on my own time.</p>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="featured-grid">
+            <!-- ChatBridge -->
+            <a href="chatbridge/index.html" class="project-featured-link" id="featured-project-chatbridge">
+                <article class="project-card project-card-featured">
+                <div class="project-card-inner">
+                    <div class="project-icon project-icon-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+                    </div>
+                    <div class="project-meta">
+                        <time class="project-date">May 2025</time>
+                        <span class="project-views">
+                            <span class="views-dot"></span>
+                            <span class="view-count" id="chatbridge-views">0</span> views
+                        </span>
+                        <span class="status-badge status-live"><span class="status-dot-color"></span>Live Now</span>
+                    </div>
+                    <h2 class="project-title">ChatBridge</h2>
+                    <p class="project-desc">An open-source, self-hosted messaging platform with end-to-end encryption, file sharing, and video calling.</p>
+                    <span class="project-read-more">Open App →</span>
+                </div>
+            </article>
+        </a>
+
+        <!-- EduCloud -->
+        <a href="school-platform/index.html" class="project-featured-link" id="featured-project-educloud">
+            <article class="project-card project-card-featured">
+                <div class="project-card-inner">
+                    <div class="project-icon project-icon-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <div class="project-meta">
+                        <time class="project-date">May 2026</time>
+                        <span class="project-views">
+                            <span class="views-dot"></span>
+                            <span class="view-count" id="educloud-views">0</span> views
+                        </span>
+                        <span class="status-badge status-live"><span class="status-dot-color"></span>Live Now</span>
+                    </div>
+                    <h2 class="project-title">EduCloud</h2>
+                    <p class="project-desc">Cloud-based School Management Platform with role-based dashboards, attendance tracking, and fee management.</p>
+                    <span class="project-read-more">Open App →</span>
+                </div>
+            </article>
+        </a>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid" id="project-grid">
+            <article class="project-card" id="project-taskflow">
+                <div class="project-card-inner">
+                    <div class="project-icon project-icon-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                    <div class="project-meta">
+                        <time class="project-date">Mar 2025</time>
+                        <span class="project-views"><span class="views-dot"></span><span class="view-count">0</span></span>
+                        <span class="status-badge status-progress"><span class="status-dot-color"></span>In Progress</span>
+                    </div>
+                    <h2 class="project-title">TaskFlow</h2>
+                    <p class="project-desc">An intelligent task management application with AI-powered prioritization and natural language processing for effortless productivity.</p>
+                </div>
+            </article>
+
+            <article class="project-card" id="project-codereviewer">
+                <div class="project-card-inner">
+                    <div class="project-icon project-icon-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <div class="project-meta">
+                        <time class="project-date">Feb 2025</time>
+                        <span class="project-views"><span class="views-dot"></span><span class="view-count">0</span></span>
+                        <span class="status-badge status-progress"><span class="status-dot-color"></span>In Progress</span>
+                    </div>
+                    <h2 class="project-title">CodeReviewer AI</h2>
+                    <p class="project-desc">An automated code review tool leveraging large language models to provide instant, contextual feedback on pull requests.</p>
+                </div>
+            </article>
+
+            <article class="project-card" id="project-synth">
+                <div class="project-card-inner">
+                    <div class="project-icon project-icon-pink">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    </div>
+                    <div class="project-meta">
+                        <time class="project-date">Dec 2024</time>
+                        <span class="project-views"><span class="views-dot"></span><span class="view-count">0</span></span>
+                        <span class="status-badge status-progress"><span class="status-dot-color"></span>In Progress</span>
+                    </div>
+                    <h2 class="project-title">SynthWave</h2>
+                    <p class="project-desc">A browser-based synthesizer and music production tool built with the Web Audio API. Create, mix, and export tracks right from your browser.</p>
+                </div>
+            </article>
+
+            <article class="project-card" id="project-cloudvault">
+                <div class="project-card-inner">
+                    <div class="project-icon project-icon-cyan">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <div class="project-meta">
+                        <time class="project-date">Nov 2024</time>
+                        <span class="project-views"><span class="views-dot"></span><span class="view-count">0</span></span>
+                        <span class="status-badge status-progress"><span class="status-dot-color"></span>In Progress</span>
+                    </div>
+                    <h2 class="project-title">CloudVault</h2>
+                    <p class="project-desc">End-to-end encrypted file storage and sharing platform. Your data is encrypted before it ever leaves your device.</p>
+                </div>
+            </article>
+
+            <article class="project-card" id="project-pixelcraft">
+                <div class="project-card-inner">
+                    <div class="project-icon project-icon-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z"/><path d="m14 7 3 3"/></svg>
+                    </div>
+                    <div class="project-meta">
+                        <time class="project-date">Sep 2024</time>
+                        <span class="project-views"><span class="views-dot"></span><span class="view-count">0</span></span>
+                        <span class="status-badge status-progress"><span class="status-dot-color"></span>In Progress</span>
+                    </div>
+                    <h2 class="project-title">PixelCraft</h2>
+                    <p class="project-desc">A lightweight, GPU-accelerated image editor for the web. Supports layers, filters, and real-time collaboration.</p>
+                </div>
+            </article>
+
+            <article class="project-card" id="project-devpulse">
+                <div class="project-card-inner">
+                    <div class="project-icon project-icon-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <div class="project-meta">
+                        <time class="project-date">Jul 2024</time>
+                        <span class="project-views"><span class="views-dot"></span><span class="view-count">0</span></span>
+                        <span class="status-badge status-progress"><span class="status-dot-color"></span>In Progress</span>
+                    </div>
+                    <h2 class="project-title">DevPulse</h2>
+                    <p class="project-desc">Real-time developer analytics dashboard. Track commits, PRs, and productivity metrics across all your repositories.</p>
+                </div>
+            </article>
+
+            <article class="project-card" id="project-apigateway">
+                <div class="project-card-inner">
+                    <div class="project-icon project-icon-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+                    </div>
+                    <div class="project-meta">
+                        <time class="project-date">Mar 2024</time>
+                        <span class="project-views"><span class="views-dot"></span><span class="view-count">0</span></span>
+                        <span class="status-badge status-progress"><span class="status-dot-color"></span>In Progress</span>
+                    </div>
+                    <h2 class="project-title">API Gateway Pro</h2>
+                    <p class="project-desc">A high-performance API gateway with built-in rate limiting, authentication, and real-time monitoring capabilities.</p>
+                </div>
+            </article>
+
+
+            <article class="project-card" id="project-neuralnet">
+                <div class="project-card-inner">
+                    <div class="project-icon project-icon-pink">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="6" r="3"/><line x1="6" x2="18" y1="9" y2="15"/><line x1="18" x2="6" y1="9" y2="15"/></svg>
+                    </div>
+                    <div class="project-meta">
+                        <time class="project-date">Jan 2024</time>
+                        <span class="project-views"><span class="views-dot"></span><span class="view-count">0</span></span>
+                        <span class="status-badge status-progress"><span class="status-dot-color"></span>In Progress</span>
+                    </div>
+                    <h2 class="project-title">NeuralNet Playground</h2>
+                    <p class="project-desc">An interactive visualizer for neural networks. Build, train, and experiment with deep learning models right in your browser.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script src="particles.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
